@@ -1,97 +1,210 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TailwindCSS</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <h1 class="text-4xl font-bold text-red-500 text-center underline">
-      This is heading 1
-    </h1>
-    <h2
-      class="text-right text-3xl font-bold text-green-500 overline sm:text-yellow-500 md:text-blue-500 lg:text-pink-500 xl:text-puple"
-    >
-      This is heading 2
-    </h2>
-    <h3 class="text-">This is heading 3</h3>
-    <div class="dark:bg-slate-600">This is a div section</div>
-    <br />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Home</title>
+  <link href="main.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
 
-    <!-- Hover, Focus, Active, and Checked -->
-    <button class="bg-sky-500 hover:bg-sky-700">Save changes</button>
-    <br />
-    <button
-      class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
-    >
-      Save changes
-    </button>
-    <br />
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold">MyStore</a>
+      <nav class="hidden md:flex space-x-4">
+        <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Shop</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">About</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Contact</a>
+      </nav>
+      <div class="space-x-4 flex items-center">
+        <a href="#" class="text-gray-700 hover:text-gray-900">Login</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M3 3l4.5 9h9L21 3M3 3l7 13 3.5-6.5M21 3l-4.5 9M13 16h-2v5h2v-5z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </header>
 
-     
+  <!-- Full-Width Image Section -->
+  <section class="relative w-screen h-96 md:h-96 bg-cover bg-center" style="background-image: url('./images/main.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
+      <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-bold">Welcome to MyStore</h1>
+    </div>
+  </section>
 
-    <ul>
-      <li class="flex py-0 first:pt-4 last:pb-4">
-        <img
-          class="h-10 w-10 rounded-full"
-          src="./article2.jpg"
-          alt=""
-        />
-        <div class="ml-3 oveflow-hidden">
-          <p class="text-sm font-medium text-slate-900">person name</p>
-          <p class="text-sm text-slate-500 truncate">personemail@gmail.com</p>
-        </div>
-      </li>
-    </ul>
-
-
-      <ul>
-        <li class="flex py-0 first:pt-4 last:pb-4">
-          <img
-            class="h-10 w-10 rounded-full"
-            src="./article.jpg"
-            alt=""
-          />
-          <div class="ml-3 oveflow-hidden">
-            <p class="text-sm font-medium text-slate-900">person name</p>
-            <p class="text-sm text-slate-500 truncate">personemail@gmail.com</p>
-          </div>
-        </li>
-      </ul>
-
-
-      <ul>
-        <li class="flex py-0 first:pt-4 last:pb-4">
-          <img
-            class="h-10 w-10 rounded-full"
-            src="./article1.jpg"
-            alt=""
-          />
-          <div class="ml-3 oveflow-hidden">
-            <p class="text-sm font-medium text-slate-900">person name</p>
-            <p class="text-sm text-slate-500 truncate">personemail@gmail.com</p>
-          </div>
-        </li>
-      </ul>
-
-      <!-- Reusing style -->
-      <div>
-        <div class="flex items-center space-x-2 text-base">
-          <h4 class="font-semibold text-slate-900">Contributors</h4>
-          <span class="rounded-full bg-slate-100 px-2 py-1 text-xs font-semibold text-slate-700">204</span>
-        </div>
-        <div class="mt-3 flex -space-x-2 overflow-hidden">
-          <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
-          <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
-          <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
-          <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
-          <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
-        </div>
-        <div class="mt-3 text-sm font-medium">
-          <a href="#" class="text-blue-500">+ 198 others</a>
-        </div>
+  <!-- Product Grid -->
+  <section class="container mx-auto px-4 py-8">
+    <h2 class="text-3xl font-bold mb-6 text-center">Featured Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Product Card 1 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+        <img src="./images/product1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
+        <h3 class="text-lg font-semibold">Product 1</h3>
+        <p class="text-gray-700">$19.99</p>
+        <a href="cart.html" class="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 mt-4 text-center rounded">Add to Cart</a>
       </div>
 
-  </body>
+      <!-- Product Card 2 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+        <img src="./images/product2.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-t-lg mb-4">
+        <h3 class="text-lg font-semibold">Product 2</h3>
+        <p class="text-gray-700">$29.99</p>
+        <a href="cart.html" class="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 mt-4 text-center rounded">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+        <img src="./images/product3.jpg" alt="Product 3" class="w-full h-48 object-cover rounded-t-lg mb-4">
+        <h3 class="text-lg font-semibold">Product 3</h3>
+        <p class="text-gray-700">$39.99</p>
+        <a href="cart.html" class="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 mt-4 text-center rounded">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+        <img src="./images/product4.jpg" alt="Product 4" class="w-full h-48 object-cover rounded-t-lg mb-4">
+        <h3 class="text-lg font-semibold">Product 4</h3>
+        <p class="text-gray-700">$49.99</p>
+        <a href="cart.html" class="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 mt-4 text-center rounded">Add to Cart</a>
+      </div>
+
+       <!-- Product Card 5 -->
+       <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+        <img src="./images/product5.jpg" alt="Product 5" class="w-full h-48 object-cover rounded-t-lg mb-4">
+        <h3 class="text-lg font-semibold">Product 5</h3>
+        <p class="text-gray-700">$49.99</p>
+        <a href="cart.html" class="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 mt-4 text-center rounded">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+        <img src="./images/product6.jpg" alt="Product 6" class="w-full h-48 object-cover rounded-t-lg mb-4">
+        <h3 class="text-lg font-semibold">Product 6</h3>
+        <p class="text-gray-700">$49.99</p>
+        <a href="cart.html" class="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 mt-4 text-center rounded">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 7 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+        <img src="./images/product7.jpg" alt="Product 7" class="w-full h-48 object-cover rounded-t-lg mb-4">
+        <h3 class="text-lg font-semibold">Product 7</h3>
+        <p class="text-gray-700">$49.99</p>
+        <a href="cart.html" class="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 mt-4 text-center rounded">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 8 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+        <img src="./images/product8.jpg" alt="Product 8" class="w-full h-48 object-cover rounded-t-lg mb-4">
+        <h3 class="text-lg font-semibold">Product 8</h3>
+        <p class="text-gray-700">$49.99</p>
+        <a href="cart.html" class="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 mt-4 text-center rounded">Add to Cart</a>
+      </div>
+
+      
+      <!-- Repeat for more products as needed -->
+    </div>
+
+    <!-- Service Description Section -->
+<section class="bg-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+  
+        <!-- Column 1: Service Image -->
+        <div class="flex justify-center">
+          <img src="./images/service_image.jpg" alt="Our Service" class="rounded-lg shadow-lg w-full h-74 object-cover md:w-4/5 lg:w-3/4">
+        </div>
+  
+        <!-- Column 2: Service Description -->
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Our Premium Services</h2>
+          <p class="text-gray-600 mb-4">
+            We offer a wide range of premium services to meet your every need. Our team is dedicated to providing top-notch support and ensuring customer satisfaction every step of the way.
+          </p>
+          <p class="text-gray-600 mb-4">
+            From personalized consultations to round-the-clock support, we are here to help you achieve your goals. Our services are tailored to provide you with the best results, backed by industry-leading expertise.
+          </p>
+          <a href="#" class="inline-block bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 transition duration-300">Learn More</a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+    
+
+<!-- Subscribe Section -->
+<section class="bg-blue-600 py-12">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold text-white mb-4">Subscribe to Our Newsletter</h2>
+        <p class="text-white text-lg">Stay updated with the latest news, offers, and products!</p>
+      </div>
+      
+      <!-- Subscription Form -->
+      <div class="max-w-lg mx-auto">
+        <form class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+          <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+        </section>
+
+  <!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+  
+        <!-- Column 1: About Us -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">About Us</h3>
+          <p class="text-gray-400">
+            MyStore is an online marketplace offering the latest products in fashion, tech, and more. We prioritize quality and customer satisfaction.
+          </p>
+        </div>
+  
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Shop</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+          </ul>
+        </div>
+  
+        <!-- Column 3: Follow Us / Social Media -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.89-.53 1.57-1.36 1.89-2.35-.83.5-1.74.87-2.71 1.07-.79-.84-1.91-1.36-3.15-1.36-2.39 0-4.33 1.94-4.33 4.33 0 .34.03.68.1 1-3.59-.18-6.77-1.9-8.91-4.52-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.8 1.91 3.57-.7-.02-1.37-.21-1.94-.53v.05c0 2.08 1.48 3.82 3.45 4.22-.36.1-.74.15-1.13.15-.28 0-.55-.03-.81-.08.55 1.71 2.15 2.95 4.04 2.99-1.48 1.16-3.33 1.86-5.35 1.86-.35 0-.7-.02-1.04-.06 1.91 1.23 4.19 1.95 6.64 1.95 7.97 0 12.33-6.6 12.33-12.33v-.56c.84-.6 1.57-1.36 2.15-2.22z"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.41 2.86 8.17 6.84 9.48.5.09.68-.22.68-.48 0-.24-.01-1.12-.01-2.05-2.78.61-3.37-1.34-3.37-1.34-.45-1.15-1.09-1.46-1.09-1.46-.89-.61.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.88 1.51 2.31 1.08 2.88.82.09-.64.34-1.08.62-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.02-2.7-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.47 9.47 0 0112 6.8c.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.63.71 1.02 1.61 1.02 2.7 0 3.85-2.34 4.7-4.57 4.95.35.3.66.89.66 1.8 0 1.3-.01 2.35-.01 2.67 0 .26.18.58.68.48A10.02 10.02 0 0022 12z"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v8a2 2 0 01-2 2h-4v-7h2.5a1 1 0 100-2H14v9h-4v-9H8v7H4a2 2 0 01-2-2v-8a6 6 0 016-6h8z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+      
+      <!-- Divider -->
+      <div class="border-t border-gray-700 mt-8"></div>
+      
+      <!-- Footer Bottom: Copyright -->
+      <div class="text-center text-gray-500 text-sm mt-4">
+        © 2024 MyStore. All rights reserved.
+      </div>
+    </div>
+  </footer>
+<script src="main.js"></script>
+</body>
 </html>
